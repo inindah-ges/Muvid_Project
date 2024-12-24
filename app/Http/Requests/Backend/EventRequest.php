@@ -26,7 +26,7 @@ class EventRequest extends FormRequest
         return [
             'name' => 'required|string|min:3|unique:events,name,' . $routeIdEvent . ',uuid',
             'category_id' => 'required|exists:categories,id',
-            'image' => $this->method() === 'POST' ? 'required|image|mimetypes:image/jpeg,image/png,image/jpg,image/svg|mimes:jpeg,png,jpg,svg|max:2048' : 'nullable|image|mimetypes:image/jpeg,image/png,image/jpg,image/svg|mimes:jpeg,png,jpg,svg|max:2048',
+            'image' => $this->method() === 'POST' ? 'required|image|mimetypes:image/jpeg,image/png,image/jpg,image/svg|mimes:jpeg,png,jpg,svg|max:10048' : 'nullable|image|mimetypes:image/jpeg,image/png,image/jpg,image/svg|mimes:jpeg,png,jpg,svg|max:10048',
         ];
 
     }

@@ -15,7 +15,7 @@
                             <img class="img-fluid rounded-top" src="{{ asset('storage/' . $chef->photo) }}"
                                 alt="{{ $chef->name }}">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">{{ $chef->name }}</h4>
+                                <h4 class="text-danger">{{ $chef->name }}</h4>
                                 <p class="text-white mb-0">{{ $chef->position }}</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">

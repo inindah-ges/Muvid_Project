@@ -3,11 +3,11 @@
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-lg py-4">
                 <a href="{{ url('/') }}" class="navbar-brand">
-                    <h1 class="text-primary fw-bold mb-0">K<span class="text-dark">L.</span> </h1>
+                    <img src="{{ asset('frontend/assets/img/logoo.png') }}" alt="Logo" style="width: 100px;">
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+                    <span class="fa fa-bars text-danger"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
@@ -31,7 +31,7 @@
                     </div>
                     @auth
                         <a href="{{ route('cart.index') }}"
-                        class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-inline-flex my-2">
+                            class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-inline-flex my-2">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
                     @endauth
@@ -64,8 +64,7 @@
                             </ul>
                         </div>
                     @else
-                        <a href="{{ route('login') }}"
-                            class="btn btn-primary py-2 px-4 rounded-pill my-2">
+                        <a href="{{ route('login') }}" class="btn btn-primary py-2 px-4 rounded-pill my-2">
                             Login/Register
                         </a>
                     @endauth

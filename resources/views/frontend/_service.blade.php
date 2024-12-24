@@ -12,7 +12,7 @@
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
-                                <i class="fas fa-coffee fa-7x text-primary mb-4"></i>
+                                <i class="fas fa-coffee fa-7x text-danger mb-4"></i>
                                 <h4 class="mb-3">Varian Minuman</h4>
                                 <p class="mb-4">Nikmati berbagai varian minuman spesial yang dibuat dengan bahan
                                     berkualitas untuk memenuhi selera Anda.</p>
@@ -25,7 +25,7 @@
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
-                                <i class="fas fa-shopping-bag fa-7x text-primary mb-4"></i>
+                                <i class="fas fa-shopping-bag fa-7x text-danger mb-4"></i>
                                 <h4 class="mb-3">Pesan Bungkus</h4>
                                 <p class="mb-4">Pesan untuk dibawa pulang.<br> Praktis dan mudah untuk Anda yang <br>
                                     ingin menikmati di luar.</p>
@@ -38,7 +38,7 @@
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
-                                <i class="fas fa-utensils fa-7x text-primary mb-4"></i>
+                                <i class="fas fa-utensils fa-7x text-danger mb-4"></i>
                                 <h4 class="mb-3">Varian Makanan</h4>
                                 <p class="mb-4">Pilih dari beragam menu makanan kami yang cocok untuk menemani minuman
                                     favorit Anda di Kanal Social Space.</p>

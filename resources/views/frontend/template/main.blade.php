@@ -7,8 +7,31 @@
     <title>Kanal Social Space - @yield('title')</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="description"
+        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+    <meta name="keywords"
+        content="Kanal Social Space, Kanal, Social, Space, Coffee, Mocktail, Food, Kafe, Makassar, Wijaya Kusuma">
+    <meta name="author" content="Muh. Alif Anhar">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Kanal Social Space" />
+    <meta property="og:description"
+        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+    <meta property="og:image" content="{{ asset('img/logo.jpg') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kanal Social Space" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $title ?? 'Homepage' }}" />
+    <meta name="twitter:description"
+        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+    <meta name="twitter:image" content="{{ asset('img/logo.jpg') }}" />
+    <meta name="twitter:site" content="@crwnleaf" />
+    <meta name="twitter:creator" content="@crwanleaf" />
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/logo.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logo.jpg') }}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +73,8 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

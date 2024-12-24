@@ -40,7 +40,7 @@
 
                         try {
                             // Kirim data ke Formspree menggunakan Fetch API
-                            const response = await fetch('https://formspree.io/f/mqaknzwv', {
+                            const response = await fetch('https://formspree.io/f/xlddeyng', {
                                 method: 'POST',
                                 body: formData,
                                 headers: {
@@ -69,26 +69,25 @@
                 <div class="col-sm-12 col-md-6 col-lg-5 text-break">
                     <div>
                         <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                            <i class="fas fa-map-marker-alt fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Address</h4>
                                 <p> Jl. Wijaya Kusuma No.6, Makassar</p>
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
-                            <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                            <i class="fas fa-envelope fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Mail Us</h4>
-                                <p class="mb-2">kelompok1@gmail.com</p>
-                                <p class="mb-0">info@kanalsocialspace.com</p>
+                                <p class="mb-2">kanalsocialspace@gmail.com</p>
+                                {{-- <p class="mb-0">info@kanalsocialspace.com</p> --}}
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border border-primary p-4 rounded">
-                            <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                            <i class="fa fa-phone-alt fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Telephone</h4>
-                                <p class="mb-2">(+012) 3456 7890 123</p>
-                                <p class="mb-0">(+704) 5555 0127 296</p>
+                                <p class="mb-2">0857 5761 2907</p>
                             </div>
                         </div>
                     </div>

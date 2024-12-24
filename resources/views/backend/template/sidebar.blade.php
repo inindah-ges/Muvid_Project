@@ -6,8 +6,8 @@
             aria-hidden="true" id="iconSidenav"></i>
         <div class="navbar-brand m-0">
             <div class="d-flex align-items-center">
-                <i class="material-icons text-white me-2">local_cafe</i>
-                <span class="font-weight-bold text-white">Coffee Panel</span>
+                <img src="{{ asset('img/logo.png') }}" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="font-weight-bold text-white">Kanal Social Space</span>
             </div>
         </div>
     </div>

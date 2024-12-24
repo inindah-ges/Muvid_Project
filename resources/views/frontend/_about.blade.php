@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-5 wow bounceInUp">
-                    <img src="{{ asset('frontend/assets') }}/img/about.jpg" class="img-fluid rounded" alt="">
+                    <img src="{{ asset('frontend/assets') }}/img/profil1.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                     <small
@@ -19,16 +19,16 @@
                         mudah hanya dengan satu klik!</p>
                     <div class="row g-4 text-dark mb-5">
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>Pesan Sekarang, Nikmati Segera!
+                            <i class="fas fa-share text-danger me-2"></i>Pesan Sekarang, Nikmati Segera!
                         </div>
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>Kami Selalu Ada Untuk Anda!
+                            <i class="fas fa-share text-danger me-2"></i>Kami Selalu Ada Untuk Anda!
                         </div>
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>Sesuaikan Pesananmu, Nikmati Kebebasan!
+                            <i class="fas fa-share text-danger me-2"></i>Sesuaikan Pesananmu, Nikmati Kebebasan!
                         </div>
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>Nikmati Rasa Istimewa, Harga Lebih Hemat!
+                            <i class="fas fa-share text-danger me-2"></i>Nikmati Rasa Istimewa, Harga Lebih Hemat!
                         </div>
                     </div>
                     <a href="{{ route('frontend.contact') }}" class="btn btn-primary py-3 px-5 rounded-pill">Hubungi<i
