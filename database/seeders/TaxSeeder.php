@@ -15,7 +15,7 @@ class TaxSeeder extends Seeder
     {
         Tax::insert([
             'name' => 'PPN',
-            'rate' => 10
+            'rate' => 0
         ]);
     }
 }

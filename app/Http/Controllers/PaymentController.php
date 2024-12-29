@@ -67,7 +67,8 @@ class PaymentController extends Controller
             });
 
             $taxAmount = ($subtotal - $discount) * ($tax ? $tax->rate / 100 : 0);
-            $total = $subtotal - $discount + $taxAmount;
+            // $total = $subtotal - $discount + $taxAmount;
+            $total = $subtotal;
 
             $order = Order::create([
                 'user_id' => Auth::id(),
@@ -83,7 +84,7 @@ class PaymentController extends Controller
 
             foreach ($cartItems as $item) {
                 $itemSubtotal = $item->product->price * $item->quantity;
-                $itemDiscount = $item->quantity >= 10 ? $itemSubtotal * 0.1 : 0;
+                $itemDiscount = $item->quantity >= 1000 ? $itemSubtotal * 0.1 : 0;
 
                 $order->orderDetails()->create([
                     'product_id' => $item->product_id,
