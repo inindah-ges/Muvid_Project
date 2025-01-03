@@ -43,8 +43,8 @@
                             onsubmit="return validateForm()">
                             @csrf
                             <input type="hidden" name="subtotal" id="subtotalInput">
-                            {{-- <input type="hidden" name="tax_amount" id="taxInput"> --}}
-                            {{-- <input type="hidden" name="discount_amount" id="discountInput"> --}}
+                            <input type="hidden" name="tax_amount" id="taxInput">
+                            <input type="hidden" name="discount_amount" id="discountInput">
                             <input type="hidden" name="total_price" id="totalInput">
 
                             <!-- Product Selection -->
@@ -59,14 +59,15 @@
                                                         <td class="pe-3">Subtotal:</td>
                                                         <td><span id="subtotalAmount">Rp 0</span></td>
                                                     </tr>
-                                                    {{-- <tr>
-                                                    <td class="pe-3">Tax ({{ $tax ? $tax->rate : 0 }}%):</td>
-                                                    <td><span id="taxAmount">Rp 0</span></td>
-                                                </tr> --}}
-                                                    {{-- <tr>
-                                                    <td class="pe-3">Discount:</td>
-                                                    <td><span id="discountAmount">Rp 0</span></td>
-                                                </tr> --}}
+                                                    <tr>
+                                                        {{-- <td class="pe-3">Tax ({{ $tax ? $tax->rate : 0 }}%):</td> --}}
+                                                        <td class="pe-3">Tax:</td>
+                                                        <td><span id="taxAmount">Rp 0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pe-3">Discount:</td>
+                                                        <td><span id="discountAmount">Rp 0</span></td>
+                                                    </tr>
                                                     <tr class="border-top">
                                                         <td class="pe-3"><strong>Total:</strong></td>
                                                         <td><strong id="totalAmount">Rp 0</strong></td>
@@ -125,7 +126,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
         let products = @json($products);
-        // let tax = @json($tax);
+        let tax = @json($tax);
         let itemCount = 0;
 
         function initializeSelect2(element) {
@@ -146,7 +147,7 @@
         function calculateTotals() {
             const items = document.querySelectorAll('#orderItems .row');
             let subtotal = 0;
-            // let totalDiscount = 0;
+            let totalDiscount = 0;
 
             items.forEach(row => {
                 const select = $(row).find('select');
@@ -159,9 +160,10 @@
                     subtotal += itemSubtotal;
 
                     // Calculate discount (10% if quantity >= 10)
-                    // if (quantity >= 10) {
-                    //     totalDiscount += itemSubtotal * 0.1;
-                    // }
+                    if (quantity >= 10) {
+                        // totalDiscount += itemSubtotal * 0.1;
+                        totalDiscount += 0;
+                    }
 
                     // Update row subtotal
                     $(row).find('.subtotal').text(`Rp ${itemSubtotal.toLocaleString('id')}`);
@@ -170,14 +172,15 @@
 
             // Calculate tax
             // const taxAmount = tax ? (subtotal * (tax.rate / 100)) : 0;
+            const taxAmount = tax ? (subtotal * 0) : 0;
 
             // Calculate final total
             const total = subtotal;
 
             // Update displays with proper formatting
             $('#subtotalAmount').text(`Rp ${subtotal.toLocaleString('id')}`);
-            // $('#taxAmount').text(`Rp ${taxAmount.toLocaleString('id')}`);
-            // $('#discountAmount').text(`Rp ${totalDiscount.toLocaleString('id')}`);
+            $('#taxAmount').text(`Rp ${taxAmount.toLocaleString('id')}`);
+            $('#discountAmount').text(`Rp ${totalDiscount.toLocaleString('id')}`);
             $('#totalAmount').text(`Rp ${total.toLocaleString('id')}`);
         }
 
@@ -240,13 +243,13 @@
 
             // Set values untuk hidden inputs
             const subtotal = document.getElementById('subtotalAmount').textContent.replace('Rp ', '').replace(/\./g, '');
-            // const taxAmount = document.getElementById('taxAmount').textContent.replace('Rp ', '').replace(/\./g, '');
-            // const discount = document.getElementById('discountAmount').textContent.replace('Rp ', '').replace(/\./g, '');
+            const taxAmount = document.getElementById('taxAmount').textContent.replace('Rp ', '').replace(/\./g, '');
+            const discount = document.getElementById('discountAmount').textContent.replace('Rp ', '').replace(/\./g, '');
             const total = document.getElementById('totalAmount').textContent.replace('Rp ', '').replace(/\./g, '');
 
             document.getElementById('subtotalInput').value = subtotal;
-            // document.getElementById('taxInput').value = taxAmount;
-            // document.getElementById('discountInput').value = discount;
+            document.getElementById('taxInput').value = taxAmount;
+            document.getElementById('discountInput').value = discount;
             document.getElementById('totalInput').value = total;
 
             return true;
