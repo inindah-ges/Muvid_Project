@@ -28,7 +28,10 @@ class OrderService
 
                 // Calculate discount (10% if quantity >= 10)
                 $discount = 0;
-                if ($item['quantity'] >= 10) {
+                // if ($item['quantity'] >= 10) {
+                //     $discount = $itemSubtotal * 0.1;
+                // }
+                if ($item['quantity'] >= 1000) {
                     $discount = $itemSubtotal * 0.1;
                 }
 
@@ -37,7 +40,8 @@ class OrderService
                 $taxAmount = 0;
                 if ($tax) {
                     // Tax is calculated after discount
-                    $taxAmount = ($itemSubtotal - $discount) * ($tax->rate / 100);
+                    // $taxAmount = ($itemSubtotal - $discount) * ($tax->rate / 100);
+                    $taxAmount = 0;
                 }
 
                 $orderDetails[] = [
@@ -220,7 +224,8 @@ class OrderService
                 $discount = $this->calculateDiscount($detail);
 
                 $subtotal = $detail->price * $detail->quantity;
-                $taxAmount = $tax ? ($subtotal * $tax->rate / 100) : 0;
+                // $taxAmount = $tax ? ($subtotal * $tax->rate / 100) : 0;
+                $taxAmount = $tax ? ($subtotal * 0) : 0;
                 $finalSubtotal = $subtotal + $taxAmount - $discount;
 
                 $selling->sellingDetails()->create([
@@ -255,7 +260,8 @@ class OrderService
 
             // Hitung tax
             $tax = Tax::where('name', 'PPN')->first();
-            $taxAmount = $tax ? ($subtotal * $tax->rate / 100) : 0;
+            // $taxAmount = $tax ? ($subtotal * $tax->rate / 100) : 0;
+            $taxAmount = $tax ? ($subtotal * 0) : 0;
 
             // Hitung discount
             $discount = $this->calculateDiscount($detail);
@@ -269,7 +275,10 @@ class OrderService
     {
         // Implementasi logika discount
         // Contoh: Discount berdasarkan quantity
-        if ($orderDetail->quantity >= 10) {
+        // if ($orderDetail->quantity >= 10) {
+        //     return $orderDetail->subtotal * 0.1; // 10% discount
+        // }
+        if ($orderDetail->quantity >= 1000) {
             return $orderDetail->subtotal * 0.1; // 10% discount
         }
         return 0;
