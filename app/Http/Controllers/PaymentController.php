@@ -19,7 +19,7 @@ class PaymentController extends Controller
     {
         Config::$serverKey = env('MIDTRANS_SERVER_KEY');
         Config::$clientKey = env('MIDTRANS_CLIENT_KEY');
-        Config::$isProduction = env('MIDTRANS_PRODUCTION', false);
+        Config::$isProduction = env('MIDTRANS_PRODUCTION', true);
         Config::$isSanitized = env('MIDTRANS_SANITIZED', true);
         Config::$is3ds = env('MIDTRANS_3DS', true);
 
