@@ -23,7 +23,7 @@ class PaymentController extends Controller
         Config::$isSanitized = env('MIDTRANS_SANITIZED', true);
         Config::$is3ds = env('MIDTRANS_3DS', true);
 
-        Config::$paymentIdempotencyKey = true;
+        // Config::$paymentIdempotencyKey = true;
     }
 
     public function checkout()
@@ -63,10 +63,11 @@ class PaymentController extends Controller
 
             $discount = $cartItems->sum(function ($item) {
                 $itemSubtotal = $item->product->price * $item->quantity;
-                return $item->quantity >= 10 ? $itemSubtotal * 0.1 : 0;
+                return $item->quantity >= 1000 ? $itemSubtotal * 0.1 : 0;
             });
 
-            $taxAmount = ($subtotal - $discount) * ($tax ? $tax->rate / 100 : 0);
+            // $taxAmount = ($subtotal - $discount) * ($tax ? $tax->rate / 100 : 0);
+            $taxAmount = ($subtotal - $discount) * ($tax ? 0 : 0);
             // $total = $subtotal - $discount + $taxAmount;
             $total = $subtotal;
 
@@ -105,7 +106,7 @@ class PaymentController extends Controller
                     'first_name' => Auth::user()->name,
                     'email' => Auth::user()->email,
                 ],
-                'enabled_payments' => ['shopeepay', 'qris'],
+                'enabled_payments' => ['shopeepay', 'qris', 'gopay', 'credit_card', 'akulaku', 'kredivo', 'indomaret', 'alfamart', 'bca_va', 'bni_va', 'bri_va', 'mandiri_va', 'permata_va', 'cimb_va', 'bsi_va', 'danamon_va', 'other_va', 'gopay_later', 'shopeepay_later'],
                 'callbacks' => [
                     'finish' => route('payment.finish', $order->uuid),
                     'error' => route('payment.error', $order->uuid),
@@ -243,33 +244,33 @@ class PaymentController extends Controller
     {
         return match ($type) {
             // E-Wallet
-            // 'gopay' => 'gopay',
+            'gopay' => 'gopay',
             'shopeepay' => 'shopeepay',
             'qris' => 'qris',
 
             // Credit/Debit
-            // 'credit_card' => 'credit_card',
+            'credit_card' => 'credit_card',
 
             // Cardless Credit
-            // 'gopay_later' => 'gopay_later',
-            // 'shopeepay_later' => 'shopeepay_later',
-            // 'akulaku' => 'akulaku',
-            // 'kredivo' => 'kredivo',
+            'gopay_later' => 'gopay_later',
+            'shopeepay_later' => 'shopeepay_later',
+            'akulaku' => 'akulaku',
+            'kredivo' => 'kredivo',
 
             // Convenience Store
-            // 'indomaret' => 'indomaret',
-            // 'alfamart' => 'alfamart',
+            'indomaret' => 'indomaret',
+            'alfamart' => 'alfamart',
 
             // Bank Transfer
             'bank_transfer' => match ($this->getBankType($type)) {
-            // 'bca' => 'bca_va',
-            // 'bni' => 'bni_va',
-            // 'bri' => 'bri_va',
-            // 'mandiri' => 'mandiri_va',
-            // 'permata' => 'permata_va',
-            // 'cimb' => 'cimb_va',
-            // 'bsi' => 'bsi_va',
-            // 'danamon' => 'danamon_va',
+            'bca' => 'bca_va',
+            'bni' => 'bni_va',
+            'bri' => 'bri_va',
+            'mandiri' => 'mandiri_va',
+            'permata' => 'permata_va',
+            'cimb' => 'cimb_va',
+            'bsi' => 'bsi_va',
+            'danamon' => 'danamon_va',
                 default => $type
             },
             default => $type
