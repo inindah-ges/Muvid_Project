@@ -29,12 +29,12 @@
                         <a href="{{ route('frontend.map') }}"
                             class="nav-item nav-link {{ request()->routeIs('frontend.map') ? 'active' : '' }}">Lokasi</a>
                     </div>
-                    @auth
+                    {{-- @auth
                         <a href="{{ route('cart.index') }}"
                             class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-inline-flex my-2">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                    @endauth
+                    @endauth --}}
 
                     @auth
                         <div class="dropdown">
