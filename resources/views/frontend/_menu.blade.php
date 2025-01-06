@@ -44,14 +44,14 @@
                                                     {{ number_format($coffee->price, 0, ',', '.') }}</h4>
                                             </div>
                                             <p class="mb-0">{{ Str::limit($coffee->description, 120) }}</p>
-                                            <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
+                                            {{-- <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $coffee->name }}">
                                                 <input type="number" name="quantity" value="0" min="1"
                                                     class="form-control w-25 d-inline" style="display:inline-block;">
                                                 <button type="submit" class="btn btn-primary"><i
                                                         class="fas fa-shopping-cart"></i></button>
-                                            </form>
+                                            </form> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -75,14 +75,14 @@
                                                     {{ number_format($mocktail->price, 0, ',', '.') }}</h4>
                                             </div>
                                             <p class="mb-0">{{ Str::limit($mocktail->description, 120) }}</p>
-                                            <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
+                                            {{-- <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $mocktail->name }}">
                                                 <input type="number" name="quantity" value="0" min="1"
                                                     class="form-control w-25 d-inline" style="display:inline-block;">
                                                 <button type="submit" class="btn btn-primary"><i
                                                         class="fas fa-shopping-cart"></i></button>
-                                            </form>
+                                            </form> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -106,14 +106,14 @@
                                                     {{ number_format($food->price, 0, ',', '.') }}</h4>
                                             </div>
                                             <p class="mb-0">{{ Str::limit($food->description, 120) }}</p>
-                                            <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
+                                            {{-- <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $food->name }}">
                                                 <input type="number" name="quantity" value="0" min="1"
                                                     class="form-control w-25 d-inline" style="display:inline-block;">
                                                 <button type="submit" class="btn btn-primary"><i
                                                         class="fas fa-shopping-cart"></i></button>
-                                            </form>
+                                            </form> --}}
                                         </div>
                                     </div>
                                 </div>
