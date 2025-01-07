@@ -26,6 +26,12 @@
                             <span class="text-dark" style="width: 150px;">Food</span>
                         </a>
                     </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
+                            href="#tab-9">
+                            <span class="text-dark" style="width: 150px;">Drink</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
                     <div id="tab-6" class="tab-pane fade show p-0 active">
@@ -106,6 +112,37 @@
                                                     {{ number_format($food->price, 0, ',', '.') }}</h4>
                                             </div>
                                             <p class="mb-0">{{ Str::limit($food->description, 120) }}</p>
+                                            {{-- <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="{{ $food->name }}">
+                                                <input type="number" name="quantity" value="0" min="1"
+                                                    class="form-control w-25 d-inline" style="display:inline-block;">
+                                                <button type="submit" class="btn btn-primary"><i
+                                                        class="fas fa-shopping-cart"></i></button>
+                                            </form> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    <div id="tab-9" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            @foreach ($menu_drink as $drink)
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle"
+                                            src="{{ asset('storage/' . $drink->image) }}" width="70"
+                                            alt="{{ $drink->name }}">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div
+                                                class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>{{ $drink->name }}</h4>
+                                                <h4 class="text-danger">Rp.
+                                                    {{ number_format($drink->price, 0, ',', '.') }}</h4>
+                                            </div>
+                                            <p class="mb-0">{{ Str::limit($drink->description, 120) }}</p>
                                             {{-- <form action="{{ route('cart.add') }}" method="POST" class="mt-2">
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $food->name }}">

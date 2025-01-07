@@ -13,6 +13,7 @@ class MenuController extends Controller
             'menu_coffee' => $this->getMenu(7),
             'menu_mocktail' => $this->getMenu(8),
             'menu_food' => $this->getMenu(9),
+            'menu_drink' => $this->getMenu(10),
         ]);
     }
 

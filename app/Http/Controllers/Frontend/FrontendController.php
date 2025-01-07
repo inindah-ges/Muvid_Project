@@ -26,7 +26,7 @@ class FrontendController extends Controller
         $testimonials = Testimonial::with([
             'selling.user' => function ($query) {$query->select('id', 'name', 'email');}])
                 ->latest()
-                ->limit(5) 
+                ->limit(5)
                 ->get(['selling_id', 'rate', 'comment']);
 
 
@@ -41,6 +41,7 @@ class FrontendController extends Controller
             'menu_coffee'           => $this->getMenu(7),
             'menu_mocktail'         => $this->getMenu(8),
             'menu_food'             => $this->getMenu(9),
+            'menu_drink'             => $this->getMenu(10),
         ]);
     }
 
