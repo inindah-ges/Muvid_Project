@@ -52,9 +52,7 @@
 </head>
 
 <body>
-
     @yield('content')
-
     <!-- Core -->
     <script src="{{ asset('auth/vendor/@popperjs/core/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('auth/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
