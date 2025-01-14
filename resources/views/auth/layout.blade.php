@@ -39,14 +39,12 @@
     <link rel="mask-icon" href="{{ asset('auth/assets/img/favicon/safari-pinned-tab.svg') }}" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
     <!-- Sweet Alert -->
     <link type="text/css" href="{{ asset('auth/vendor/sweetalert2/dist/sweetalert2.min.css') }}" rel="stylesheet">
     <!-- Notyf -->
     <link type="text/css" href="{{ asset('auth/vendor/notyf/notyf.min.css') }}" rel="stylesheet">
     <!-- Volt CSS -->
     <link type="text/css" href="{{ asset('auth/css/volt.css') }}" rel="stylesheet">
-
 </head>
 
 <body>
