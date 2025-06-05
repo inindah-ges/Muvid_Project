@@ -30,6 +30,7 @@ class CartController extends Controller
         if ($product->stock < $request->quantity) {
             return back()->with('error', 'Stok tidak mencukupi!');
         }
+        
 
         Cart::updateOrCreate(
             [
