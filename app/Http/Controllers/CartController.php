@@ -32,6 +32,7 @@ class CartController extends Controller
         }
         
 
+
         Cart::updateOrCreate(
             [
                 'user_id' => Auth::id(),
