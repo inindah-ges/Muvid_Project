@@ -25,13 +25,12 @@ class CartController extends Controller
         ]);
 
         $product = Product::where('name', $request->product_id)->first();
-        
+
 
         // Cek stok sebelum menambahkan ke cart
         if ($product->stock < $request->quantity) {
             return back()->with('error', 'Stok tidak mencukupi!');
         }
-
 
 
         Cart::updateOrCreate(
