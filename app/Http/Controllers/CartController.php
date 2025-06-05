@@ -32,7 +32,6 @@ class CartController extends Controller
             return back()->with('error', 'Stok tidak mencukupi!');
         }
 
-
         Cart::updateOrCreate(
             [
                 'user_id' => Auth::id(),
