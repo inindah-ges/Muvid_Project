@@ -1,6 +1,6 @@
 @extends('frontend.template.main')
 
-@section('title', 'Menu ')
+@section('title', 'Menu Ini ')
 
 @section('content')
 {{-- Breadcrumb --}}
@@ -22,6 +22,7 @@
         </ol>
 
         <div role="separator" class="dropdown-divider pt-1 mt-4 border-secondary"></div>
+        <h1> halooo <h1>
     </div>
 </div>
 
