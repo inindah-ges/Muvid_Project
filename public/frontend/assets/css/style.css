@@ -1,6 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --bs-primary: #fd7e14;
+    --bs-danger: #fd7e14;
+}
+
+.text-danger {
+    color: #fd7e14 !important;
+}
+
+.btn-danger {
+    background-color: #fd7e14 !important;
+    border-color: #fd7e14 !important;
+}
+
+.bg-danger {
+    background-color: #fd7e14 !important;
+}
+
+.btn-primary {
+    background-color: #fd7e14 !important;
+    border-color: #fd7e14 !important;
+}
+
+
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -169,7 +193,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(215, 38, 56, 0.7);
+    background: rgba(253, 126, 20, 0.7);
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;

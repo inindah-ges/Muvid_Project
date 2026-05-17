@@ -11,8 +11,7 @@
                 <div class="container-fluid map-container">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                            <iframe width="100%" height="100%" id="gmap_canvas" title="Kanal Social Space Maps"
-                                src="https://maps.google.com/maps?q=Jl. Wijaya Kusuma No.6, Banta-Bantaeng, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222&t=&z=20&ie=UTF8&iwloc=&output=embed"></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.8065734177233!2d119.47182218108763!3d-5.165769428667256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee3006cfc0b61%3A0xc5f20fe89c12d678!2sMuvid%20coffee%26eatery!5e0!3m2!1sid!2sid!4v1778976501596!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 

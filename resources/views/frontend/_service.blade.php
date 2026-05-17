@@ -41,7 +41,7 @@
                                 <i class="fas fa-utensils fa-7x text-danger mb-4"></i>
                                 <h4 class="mb-3">Varian Makanan</h4>
                                 <p class="mb-4">Pilih dari beragam menu makanan kami yang cocok untuk menemani minuman
-                                    favorit Anda di Kanal Social Space.</p>
+                                    favorit Anda di Muvid.</p>
                                 {{-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Selengkapnya</a> --}}
                             </div>
                         </div>

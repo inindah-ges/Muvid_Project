@@ -17,7 +17,7 @@
                     <li class="nav-item p-2">
                         <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
                             href="#tab-7">
-                            <span class="text-dark" style="width: 150px;">Mocktail</span>
+                            <span class="text-dark" style="width: 150px;">Non Coffee</span>
                         </a>
                     </li>
                     <li class="nav-item p-2">

@@ -5,17 +5,15 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="footer-item">
-                        <h1 class="text-danger">Kanal Soc<span class="text-dark">ial Space</span></h1>
-                        <p class="lh-lg mb-4">Kanal Social Space adalah ruang <br> hangout yang cozy dengan aroma <br>
-                            kopi yang menggugah, tempat <br> yang sempurna untuk berbagi <br> cerita dan inspirasi
-                            bersama <br> teman-teman.
+                        <h1 class="text-danger">Mu<span class="text-dark">vid</span></h1>
+                        <p class="lh-lg mb-4">Muvid adalah ruang untuk berbagi cerita,<br> inspirasi, dan momen santai bersama <br> teman-teman. Muvid siap menjadi destinasi hangout favorit untuk menghabiskan waktu berkualitas bersama.
                         </p>
                         <div class="footer-icon d-flex">
                             {{-- <a class="btn btn-danger btn-sm-square me-2 rounded-circle" href=""><i
                                     class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-danger btn-sm-square me-2 rounded-circle" href=""><i
                                     class="fab fa-twitter"></i></a> --}}
-                            <a href="https://www.instagram.com/kanal.socialspace"
+                            <a href="https://www.instagram.com/muvid_coffee.eatery/"
                                 class="btn btn-danger btn-sm-square me-2 rounded-circle" target="_blank"><i
                                     class="fab fa-instagram"></i></a>
                             {{-- <a href="#" class="btn btn-danger btn-sm-square rounded-circle"><i
@@ -51,12 +49,11 @@
                     <div class="footer-item">
                         <h4 class="mb-4">Contact & Hours</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <p><i class="fa fa-map-marker-alt text-danger me-2"></i>Jl. Wijaya Kusuma No.6, Makassar</p>
-                            <p><i class="fa fa-phone-alt text-danger me-2"></i>0857 5761 2907</p>
-                            <p><i class="fas fa-envelope text-danger me-2"></i>kanalsocialspace@gmail.com</p>
+                            <p><i class="fa fa-map-marker-alt text-danger me-2"></i>Jl. Waduk Tunggu Pampamng, Makassar</p>
+                            <p><i class="fa fa-phone-alt text-danger me-2"></i>0812 3456 7890</p>
+                            <p><i class="fas fa-envelope text-danger me-2"></i>muvid@gmail.com</p>
                             <p class="mb-2"><i class="far fa-clock text-danger me-2"></i>Opening Hours:</p>
-                            <p class="mb-0 ps-4">Weekdays: 09:00 - 00:00</p>
-                            <p class="mb-0 ps-4">Weekend: 10:00 - 01:00</p>
+                            <p class="mb-0 ps-4">Everyday: 07:00 - 23:00</p>
                         </div>
                     </div>
                 </div>
@@ -70,18 +67,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Kanal
-                            Social Space</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Muvid</a>, All right reserved.</span>
                 </div>
-                <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    Designed By <a class="border-bottom decoration-none"
-                        href="https://www.linkedin.com/in/muh-alif-anhar-634bb1270/" target="_blank">Muh. Alif Anhar</a>
-                    Distributed By <a class="border-bottom decoration-none"
-                        href="https://www.instagram.com/undipamks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank">Universitas Dipa Makassar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
-</section>
+

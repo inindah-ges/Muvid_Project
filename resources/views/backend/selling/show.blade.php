@@ -33,10 +33,10 @@
                         <div class="col-12">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <h4 class="mb-1">Kanal Social Space</h4>
+                                    <h4 class="mb-1">Muvid</h4>
                                     <p class="mb-1"> Jl. Wijaya Kusuma No.6, Makassar</p>
                                     <p class="mb-1">Phone: 0852-5602-9021</p>
-                                    <p class="mb-0">Email: info@kanalsocialspace.com</p>
+                                    <p class="mb-0">Email: info@muvid.com</p>
                                 </div>
                                 <div class="text-end">
                                     <h5 class="mb-1">INVOICE #{{ $selling->invoice }}</h5>

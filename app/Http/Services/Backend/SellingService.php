@@ -44,10 +44,10 @@ class SellingService
         $data = [
             'selling' => $selling,
             'company' => [
-                'name' => 'Kanal Social Space',
+                'name' => 'Muvid',
                 'address' => ' Jl. Wijaya Kusuma No.6, Makassar',
                 'phone' => '0852-5602-9021',
-                'email' => 'info@kanalsocialspace.com',
+                'email' => 'info@muvid.com',
             ],
         ];
 

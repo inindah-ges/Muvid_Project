@@ -16,12 +16,12 @@ class EventController extends Controller
             ->get(['name', 'image']);
 
         return view('frontend.event.index', [
-            'events' => $events,
-            'event_bazar'           => $this->getEvent(3),
-            'event_live_musik'      => $this->getEvent(4),
-            'event_nonton_bareng'   => $this->getEvent(5),
-            'event_game_night'      => $this->getEvent(6),
-        ]);
+    'events'                => $events,
+    'event_bazar'           => $this->getEvent(3),   // Kajian
+    'event_live_musik'      => $this->getEvent(4),   // Kelas Tahsin
+    'event_nonton_bareng'   => $this->getEvent(12),  // Peduli Sesama
+    'event_game_night'      => $this->getEvent(13),  // Tadarus Bersama
+]);
     }
 
     // show event by category

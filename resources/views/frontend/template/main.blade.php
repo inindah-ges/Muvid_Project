@@ -4,28 +4,28 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Kanal Social Space - @yield('title')</title>
+    <title>Muvid - @yield('title')</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description"
-        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+        content="Selamat Datang di Muvid. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
     <meta name="keywords"
-        content="Kanal Social Space, Kanal, Social, Space, Coffee, Mocktail, Food, Kafe, Makassar, Wijaya Kusuma">
+        content="Muvid, Coffee, Mocktail, Food, Kafe, Makassar, Wijaya Kusuma">
     <meta name="author" content="Muh. Alif Anhar">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Kanal Social Space" />
+    <meta property="og:title" content="Muvid" />
     <meta property="og:description"
-        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+        content="Selamat Datang di Muvid. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
     <meta property="og:image" content="{{ asset('img/logo.jpg') }}" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Kanal Social Space" />
+    <meta property="og:site_name" content="Muvid" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ $title ?? 'Homepage' }}" />
     <meta name="twitter:description"
-        content="Selamat Datang di Kanal Social Space. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
+        content="Selamat Datang di Muvid. Ini adalah ruang untuk berbagi cerita, inspirasi, dan momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang cozy, kami siap menjadi destinasi hangout favoritmu!" />
     <meta name="twitter:image" content="{{ asset('img/logo.jpg') }}" />
     <meta name="twitter:site" content="@crwnleaf" />
     <meta name="twitter:creator" content="@crwanleaf" />

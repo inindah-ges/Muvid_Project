@@ -6,8 +6,8 @@
             aria-hidden="true" id="iconSidenav"></i>
         <div class="navbar-brand m-0">
             <div class="d-flex align-items-center">
-                <img src="{{ asset('img/logo.png') }}" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="font-weight-bold text-white">Kanal Social Space</span>
+                <img src="{{ asset('img/logo1.png') }}" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="font-weight-bold text-white">Muvid</span>
             </div>
         </div>
     </div>

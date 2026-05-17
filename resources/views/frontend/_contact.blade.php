@@ -72,22 +72,22 @@
                             <i class="fas fa-map-marker-alt fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Address</h4>
-                                <p> Jl. Wijaya Kusuma No.6, Makassar</p>
+                                <p> Jl. Waduk Tunggu Pampamng, Makassar</p>
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
                             <i class="fas fa-envelope fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Mail Us</h4>
-                                <p class="mb-2">kanalsocialspace@gmail.com</p>
-                                {{-- <p class="mb-0">info@kanalsocialspace.com</p> --}}
+                                <p class="mb-2">muvid@gmail.com</p>
+                                {{-- <p class="mb-0">info@muvid.com</p> --}}
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border border-primary p-4 rounded">
                             <i class="fa fa-phone-alt fa-2x text-danger me-4"></i>
                             <div>
                                 <h4>Telephone</h4>
-                                <p class="mb-2">0857 5761 2907</p>
+                                <p class="mb-2">0812 3456 7890</p>
                             </div>
                         </div>
                     </div>
